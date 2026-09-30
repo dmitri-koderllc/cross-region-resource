@@ -40,7 +40,15 @@ export class CrossRegionReplicationReader extends Construct {
 
     this.resource = new cdk.CustomResource(this, "Resource", {
       serviceToken: provider.serviceToken,
-      properties: { bucketName, fileKeys: props.fileKeys },
+      properties: {
+        bucketName,
+        fileKeys: props.fileKeys,
+        // Force the custom resource to re-read on every deployment. Otherwise
+        // CloudFormation sees identical properties, skips invoking the handler,
+        // and returns the cached (stale) attributes from the previous deploy.
+        // This guarantees the reader picks up whatever the writer just wrote.
+        deployedAt: Date.now().toString(),
+      },
     });
   }
 

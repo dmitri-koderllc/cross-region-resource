@@ -9665,7 +9665,7 @@
           },
           "locationInModule": {
             "filename": "lib/cross-region-reader.ts",
-            "line": 56
+            "line": 64
           },
           "name": "getValue",
           "parameters": [
@@ -9811,6 +9811,6 @@
       "symbolId": "lib/cross-region-writer:CrossRegionReplicationWriterProps"
     }
   },
-  "version": "0.1.1",
-  "fingerprint": "pRzzcricGSZgAoOIPHG4PDNkKUX5hNz4cA5zmQJIVEM="
+  "version": "0.1.2",
+  "fingerprint": "zdWmUF+kYS+laWdSPLkI317OAlsdEgvv3+baVgcttF0="
 }
