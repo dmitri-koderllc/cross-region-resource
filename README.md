@@ -30,8 +30,8 @@ The Java artifact isn't on Maven Central either. After building, generate the js
 ```bash
 npm run package    # runs jsii-pacmak, emits the Maven artifact under dist/java
 mvn install:install-file \
-  -Dfile=dist/java/net/koderllc/cross-region-resource/0.1.1/cross-region-resource-0.1.1.jar \
-  -DpomFile=dist/java/net/koderllc/cross-region-resource/0.1.1/cross-region-resource-0.1.1.pom
+  -Dfile=dist/java/net/koderllc/cross-region-resource/0.1.1/cross-region-resource-0.1.2.jar \
+  -DpomFile=dist/java/net/koderllc/cross-region-resource/0.1.1/cross-region-resource-0.1.2.pom
 ```
 
 Then depend on it from your own project:
